@@ -1,21 +1,177 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Calvin Smit">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2223</title>
-	
+
+	<title>BSTN Store</title>
+
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
-	<h1>Howdy FED2223</h1>
+	<!-- HEADER -->
+	<header>
+		<section>
+			<img src="images/bstn_hamburger.jpg" alt="Hamburger menu">
+			<img src="images/bstn_search.jpg" alt="Zoeken">
+			<img src="images/bstn_logo_white.svg" alt="BSTN logo">
+			<img src="images/bstn_profile.jpg" alt="Profiel">
+			<img src="images/bstn_shoppingcart.jpg" alt="Winkelwagen">
+		</section>
+		<nav>
+			<img src="images/close_icon_white.svg" alt="Hamburger menu">
+			<ul>
+				<li><a href="index.html">HEREN</a></li>
+				<li><a href="index.html">DAMES</a></li>
+				<li><a href="index.html">KINDEREN</a></li>
+			</ul>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+				<li><a href="">UPCOMING</a></li>
+				<li><a href="">FOOTWEAR</a></li>
+				<li><a href="">APPAREL</a></li>
+				<li><a href="">ACCESSORIES</a></li>
+				<li><a href="">BRANDS</a></li>
+				<li><a href="">BLOG</a></li>
+				<li><a href="">SALE</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- MAIN -->
+	<main>
+		<section class="banner">
+			<img src="/images/globe_icon.png" alt="Wereldbol">
+			<h1>Wereldwijde verzending</h1>
+		</section>
+
+		<!-- SLIDESHOW CONTAINER -->
+		<!-- Bron: w3schools -->
+		<section class="slideshow-container">
+
+			<section class="shoptext">
+				<h2>25% OFF ALL PRODUCTS</h2>
+				<p>USE CODE: ALL25</p>
+				<a href="">SHOP NOW</a>
+			</section>
+
+			<!-- Foto's in slideshow -->
+			<section class="mySlides fade">
+				<img src="images/bstn_homeimagemobile.jpeg" alt="Black Friday Sale">
+			</section>
+
+			<section class="mySlides fade">
+				<img src="images/bstn_homeimagemobile_3.jpeg" alt="Foto 2">
+			</section>
+
+			<section class="mySlides fade">
+				<img src="images/bstn_homeimagemobile_2.jpeg" alt="Foto 3">
+			</section>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" aria-label="Vorige" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" aria-label="Volgende" onclick="plusSlides(1)">&#10095;</a>
+			<section>
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</section>
+		</section>
+		<!-- PRODUCT CONTAINER HEADER -->
+		<section class="product-header">
+			<h2>LATEST ARRIVALS</h2>
+			<a href="new-arrivals.html"><img src="images/goto_icon.jpg" alt="Go to New Arrivals"></a>
+		</section>
+		<!-- PRODUCT CONTAINER -->
+		<!-- Bron: Devression - YouTube (link in bronnenlijst) -->
+		<section class="product">
+			<a class="prevProduct" aria-label="Vorige" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="nextProduct" aria-label="Volgende" onclick="plusSlides(1)">&#10095;</a>
+			<section class="product-container">
+				<section class="product-card">
+					<section>
+						<img src="/images/schoen_1.jpeg" class="product-thumb" alt="New Balance 550">
+					</section>
+					<section>
+						<h2>New Balance</h2>
+						<p>New Balance 550 Beige</p>
+						<h3>€129.99</h3>
+					</section>
+				</section>
+				<section class="product-card">
+					<section>
+						<img src="/images/schoen_2.jpeg" class="product-thumb" alt="Nike Nocta">
+					</section>
+					<section>
+						<h2>Nike</h2>
+						<p>Nocta Hot Step Air Terra</p>
+						<h3>€154.99</h3>
+					</section>
+				</section>
+				<section class="product-card">
+					<section>
+						<img src="/images/schoen_3.jpeg" class="product-thumb" alt="Air Jordan 1">
+					</section>
+					<section>
+						<h2>Jordan</h2>
+						<p>Air Jordan 1 Retro High OG</p>
+						<h3>€179.99</h3>
+					</section>
+				</section>
+			</section>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<section>
+			<h1>FEED FAM<br>FUCK FAME</h1>
+		</section>
+		<section>
+			<a href=""><img src="/images/instagram_logo.png" alt="Instagram"></a>
+			<a href=""><img src="/images/facebook_logo.png" alt="Facebook"></a>
+			<a href=""><img src="/images/youtube_logo.png" alt="YouTube"></a>
+		</section>
+		<section>
+			<h2>CUSTOMER SERVICE</h2>
+		</section>
+		<section>
+			<h2>KLANTENACCOUNT</h2>
+		</section>
+		<section>
+			<h2>OVER BSTN</h2>
+		</section>
+		<section>
+			<h2>WIJ VERZENDEN MET</h2>
+			<section>
+				<img src="/images/fedex_logo.png" alt="FedEx logo">
+				<img src="/images/dhl_logo.png" alt="DHL logo">
+			</section>
+		</section>
+		<section>
+			<h2>BETAALWIJZEN</h2>
+			<section>
+				<img src="/images/paypal_logo.png" alt="PayPal logo">
+				<img src="/images/ideal_logo.png" alt="iDeal logo">
+			</section>
+		</section>
+		<section>
+			<p>Imprint</p>
+			<p>Algemene voorwaarden</p>
+			<p>Privacybeleid</p>
+			<p>Nederland</p>
+		</section>
+		<section>
+			<p>Alle prijzen zijn incl. BTW, maar excl. verzendkosten en andere kosten. Doorgestreepte prijzen geven de
+				adviesprijs van de fabrikant aan.<br><strong>© 2022 BSTN Store, Alle Rechten Voorbehouden.</strong></p>
+		</section>
+	</footer>
 
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>

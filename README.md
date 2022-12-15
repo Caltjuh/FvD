@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -36,21 +36,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp: https://www.bstn.com/eu_nl/men.html
+  https://www.bstn.com/eu_nl/men.html
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  BSTN Home  
-  <img src="readme-images/bstn_website_home.jpeg" width="375px" alt="omschrijving van de pagina">
+  BSTN  
+  <img src="readme-images/bstn_site_screenshot.pdf" width="375px" alt="BSTN Homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  BSTN - New Arrivals
+  <img src="readme-images/bstn_site_screenshot2.pdf" width="375px" alt="BSTN - New Arrivals pagina">
  
 </details>
 
 
 
-## Toegankelijkheidstest 1/2 (week 1)
+## Toegankelijkheidstest 1/2 (week 1) NOG INVULLEN
 
 <details>
   <summary>uitwerken na test in 1e werkgroep</summary>
@@ -85,11 +85,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Breakdownschets (week 1)
+## Breakdownschets (week 1) NOG DOEN
 
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
-
+  
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
@@ -113,24 +113,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  
+  Verbeterpunten:
+  - 2e 'nav' veranderen naar 'section';
+  - 'main section h3' veranderen naar een 'p';
+  - 'button' veranderen naar 'a href';
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Verder goede overzichtelijke code.
 
 </details>
 
@@ -146,24 +137,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik was deze dag ziek.
 
 </details>
 
@@ -184,23 +161,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  -Ik heb geen muis kunnen gebruiken, omdat ik een laptop heb. Met het toetsenbord navigeren was prima te doen.
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  -Ik ben erachter gekomendat het vooral zeer moeilijk is om te swipen met een slechte motoriek.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  -Dit kan worden opgelost door zoveel mogelijk klikbare 'pijlen' toe te voegen zodat je kan drukken i.p.v. scrollen.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  -Na alle brillen te hebben getest op de originele site, ben ik erachter gekomen dat het tegen veel visiestoornissen bestend is, behalve de bril met wazig zicht. De originele site gebruikt namelijk soms een zeer dun lettertype.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  -Dit kan worden opgelost door het lettertype wat dikker te maken.
 
 </details>
 
@@ -216,24 +200,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  -Momenteel heb ik een beetje tijdnood door een ander schoolvak waar ik ook veel tijd aan besteed.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Verder de site uitwerken.
 
 </details>
 
@@ -247,19 +219,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eigen_bstn_website.pdf" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  -Ik heb tot zover de meeste details bijna hetzelfde kunnen maken als de originele website. Ik heb onder andere geleerd hoe je met behulp van JS een hamburger menu en slideshows kan maken, ook heb ik weer meer ervaring opgedaan met fouten in mijn code te doen oplossen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/eigen_bstn_slider.jpeg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  -Wat voor mij lastiger ging was het werken zonder divs en met zo min mogelijk classes. Dit maakt het coderen voor mij veel tijdrovender.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Wat (nog) niet is gelukt is een blur achtergrond krijgen achter mijn hamburger menu, en de gehele site verder af te werken.
+
+  <img src="readme-images/bummer_hamburger.jpeg" width="375px" alt="bummer">
 </details>
 
 
@@ -273,8 +247,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/howto/howto_js_slideshow.asp - Slideshow
+  2. https://www.bstn.com/eu_nl/men.html - Iconen & afbeeldingen
+  3. https://www.flaticon.com/ - Iconen
+  4. Bahaa Salaymeh - Hamburger menu
+  5. https://www.youtube.com/watch?v=OQZNAMjC6Vg - Product Container
 
 </details>

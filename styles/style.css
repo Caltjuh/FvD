@@ -1,34 +1,639 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
-
-button, summary {
-	cursor: pointer;
-}
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+@font-face {
+	font-family: "barlow-regular";
+	src: url("../fonts/Barlow-Regular.ttf");
+	font-weight: 400;
+}
 
+@font-face {
+	font-family: "barlow-italic";
+	src: url("../fonts/Barlow-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "barlow-medium";
+	src: url("../fonts/Barlow-Medium.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "barlow-bold";
+	src: url("../fonts/Barlow-Bold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "barlow-bolditalic";
+	src: url("../fonts/Barlow-BoldItalic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "barlow-light";
+	src: url("../fonts/Barlow-Light.ttf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "barlow";
+	src: url("../fonts/Barlow-LightItalic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "playfairdisplay";
+	src: url("../fonts/PlayfairDisplay-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "playfairdisplay-medium";
+	src: url("../fonts/PlayfairDisplay-Medium.ttf");
+	font-weight: 500;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+body {
+	margin: 0;
+	font-family: "barlow-regular", sans-serif;
+}
+
+h1 {
+	margin: 4px 0px;
+	font-size: 14px;
+	text-align: center;
+	font-family: "barlow-light";
+}
+
+h2 {
+	font-size: 18px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 80px;
+	background: #141215;
+	font-size: 30px;
+}
+
+header img {
+	height: 50px;
+}
+
+header section {
+	padding: 0;
+	margin: 0;
+}
+
+header section img:not(:nth-of-type(3)) {
+	max-height: 41px;
+	max-width: 41px;
+	margin: 10px;
+}
+
+header section img:nth-of-type(3) {
+	margin: 0px 15px;
+}
+
+header section img:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+header section img:nth-of-type(3):hover {
+	transform: scale(1.1);
+}
+
+header section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	padding: 4px;
+	font-size: 14px;
+	box-shadow: 0 0 5px rgba(17, 17, 17, 0.452);
+}
+
+/* ////HAMBURGER MENU//// */
+/* Credits: Bahaa Salaymeh */
+.menu {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #ffffff;
+	width: 85%;
+	height: 100%;
+	z-index: 998;
+	-webkit-animation: slide-in-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+	animation: slide-in-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+/* Hamburger menu slide animatie */
+@keyframes slide-in-right {
+	0% {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* Hamburger - bovenste ul */
+header ul:first-of-type {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+
+/* Hamburger - bovenste li */
+header nav ul:first-of-type li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 17px;
+	color: #fff;
+	font-size: 16px;
+	height: 80px;
+	width: 100%;
+}
+
+header nav ul:first-of-type li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header nav ul:first-of-type li:first-of-type a {
+	color: black;
+}
+
+/* 'Heren' knop */
+header nav ul:first-of-type li:first-of-type {
+	background: #ffffff;
+	box-shadow: inset 0 -3px 6px rgb(20 18 21 / 10%);
+}
+
+/* Hamburger - onderste ul */
+header nav ul li {
+	list-style-type: none;
+	font-size: 18px;
+	padding: 20px 10px;
+	margin: 0;
+	z-index: 999;
+}
+
+header nav {
+	display: none;
+}
+
+/* Close Menu knop */
+header nav img:first-of-type {
+	position: fixed;
+	top: 25px;
+	right: -40px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+header nav ul:nth-of-type(2) li a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* Sale button in hamburger*/
+header nav ul:last-of-type li:last-of-type a {
+	color: red;
+}
+
+/* ////EINDE HAMBURGER//// */
+
+/* New Arrivals pagina header */
+.na-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.na-header h2 {
+	font-size: 1.3em;
+}
+
+.na-header h3 {
+	margin-top: 0;
+	font-family: "barlow-light";
+	font-size: 1em;
+	color:#999999;
+}
+
+/* .product-container-na {
+	display: grid;
+} */
+
+.product-card-na {
+	width: 45%;
+	height: auto;
+}
+
+/* Wereldwijde verzending balk */
+.banner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 2px 7px 0px #999999;
+}
+
+.banner img {
+	height: 15px;
+	margin-right: 5px;
+}
+
+/* SLIDESHOW CONTAINER */
+/* Bron: w3schools */
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.slideshow-container section:last-of-type {
+	margin-top: -16px;
+	text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+.mySlides img {
+	width: 100%
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* "Next button" rechts */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Hover van de pijlen links en rechts */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* De streepjes onder */
+.dot {
+	cursor: pointer;
+	height: 2px;
+	width: 32%;
+	background-color: #bbb;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+section:first-of-type section:last-of-type {
+	margin-top: -16px;
+}
+
+.active,
+.dot:hover {
+	background-color: black;
+}
+
+/* EINDE streepjes */
+
+.shoptext:first-of-type h2 {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 0 5px;
+	font-family: "playfairdisplay-medium";
+	font-size: 22px;
+	color: white;
+	white-space: nowrap;
+}
+
+.shoptext p {
+	position: absolute;
+	top: 72%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 0 5px;
+	font-family: "playfairdisplay";
+	font-size: 18px;
+	color: white;
+	white-space: nowrap;
+}
+
+.shoptext a {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 200px;
+	height: 50px;
+	padding: 14px 30px 13px;
+	border-radius: 3px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #141215;
+	background-color: white;
+}
+
+/* Product Container Header */
+.product-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 15px 20px;
+	margin-top: 25px;
+}
+
+.product-header h2 {
+	font-size: 18px;
+}
+
+.product-header img {
+	padding-top: 5px;
+	width: 25px;
+}
+
+/* PRODUCT CONTAINER */
+/* Bron: Devression - YouTube (link in bronnenlijst) */
+.product {
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.product-container {
+	padding: 0 10vw;
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+	display: none;
+}
+
+.product-card {
+	flex: 0 0 auto;
+	width: 250px;
+	height: 450px;
+	margin-right: 40px;
+}
+
+.product-container img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.product-container h2 {
+	text-transform: uppercase;
+}
+
+.product-container p {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	opacity: 0.5;
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+.product-container h3 {
+	font-size: 14px;
+}
+
+.product-thumb {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-card section:last-of-type {
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
+}
+
+.prevProduct,
+.nextProduct {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	background-color: lightgrey;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	z-index: 8;
+}
+
+.nextProduct {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prevProduct:hover,
+.nextProduct:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* EINDE PRODUCT CONTAINER */
+
+footer {
+	width: 100%;
+	background-color: #E2E2E2;
+}
+
+footer h1 {
+	font-family: "barlow-bolditalic";
+	font-size: 25px;
+}
+
+footer p {
+	color: #707070;
+}
+
+/* Motto */
+footer section:first-of-type {
+	padding-top: 40px;
+}
+
+/* Social Media iconen */
+footer section:nth-of-type(2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid;
+	border-color: #999999;
+	padding: 30px 0;
+
+}
+
+footer section:nth-of-type(2) img {
+	width: 10vw;
+	margin: 0 40px;
+}
+
+/* 3 */
+footer section:nth-of-type(3) {
+	border-bottom: 1px solid;
+	border-color: #999999;
+	padding: 5px 15px 5px;
+}
+
+/* 4 */
+footer section:nth-of-type(4) {
+	border-bottom: 1px solid;
+	border-color: #999999;
+	padding: 5px 15px 5px;
+}
+
+/* 5 */
+footer section:nth-of-type(5) {
+	border-bottom: 1px solid;
+	border-color: #999999;
+	padding: 5px 15px 5px;
+}
+
+/* Wij verzenden met */
+footer section:nth-of-type(6) {
+	padding: 15px 15px 0px;
+}
+
+footer section:nth-of-type(6) section {
+	display: flex;
+	flex-direction: row;
+}
+
+footer section:nth-of-type(6) section img {
+	max-width: 80px;
+	padding-right: 20px;
+	;
+}
+
+/* Betaalwijzen */
+footer section:nth-of-type(7) {
+	padding: 15px 15px;
+}
+
+footer section:nth-of-type(7) section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+footer section:nth-of-type(7) section img {
+	width: 80px;
+	padding-right: 20px;
+	;
+}
+
+footer section:nth-of-type(7) section img:last-of-type {
+	height: 40px;
+	width: 60px;
+}
+
+/* Overige */
+footer section:nth-of-type(8) {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	border-top: 1px solid;
+	border-color: #999999;
+	padding: 0 15px;
+}
+
+footer section:last-of-type {
+	padding: 15px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+strong {
+	font-family: "barlow-medium";
+	color: black;
+}
